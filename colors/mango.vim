@@ -13,13 +13,13 @@
   if bgcolor == "light"
     let Black = "guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE"
     let Orange = "guifg=#ff5f00 guibg=NONE gui=NONE ctermfg=202 ctermbg=NONE cterm=NONE"
-    let Peach = "guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE"
+    let Peach = "guifg=#000000 guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE"
     let Red = "guifg=#ff0000 guibg=NONE gui=NONE ctermfg=196 ctermbg=NONE cterm=NONE"
   endif
   if bgcolor == "dark"
     let Black = "guifg=#626262 guibg=NONE gui=NONE ctermfg=241 ctermbg=NONE cterm=NONE"
     let Orange = "guifg=#ffaf00 guibg=NONE gui=NONE ctermfg=214 ctermbg=NONE cterm=NONE"
-    let Peach = "guifg=#ffd787 guibg=NONE gui=NONE ctermfg=222 ctermbg=NONE cterm=NONE"
+    let Peach = "guifg=#000000 guibg=NONE gui=NONE ctermfg=222 ctermbg=NONE cterm=NONE"
     let Red = "guifg=#ff5f5f guibg=NONE gui=NONE ctermfg=203 ctermbg=NONE cterm=NONE"
   endif
 
@@ -50,7 +50,7 @@
     exe "hi Ignore "          .Blue
     exe "hi Include "         .Purple
     exe "hi Keyword "         .Peach
-    exe "hi Label "           .Peach
+    exe "hi Label "           .Blue
     exe "hi LineNr "          .Gray
     exe "hi Macro "           .Purple
     exe "hi Noise "           .Silver
@@ -87,7 +87,7 @@
     exe "hi Delimiter "       .White
     exe "hi Exception "       .Peach
     exe "hi Float "           .Blue
-    exe "hi Function "        .White
+    exe "hi Function "        .Blue
     exe "hi Identifier "      .White
     exe "hi Ignore "          .Blue
     exe "hi Include "         .Purple
@@ -115,11 +115,12 @@
 
     hi CursorLine   guifg=NONE      guibg=#1c1c1c   gui=NONE      ctermfg=NONE      ctermbg=234       cterm=NONE
     hi ColorColumn  guifg=#ff0000   guibg=#1c1c1c   gui=NONE      ctermfg=203       ctermbg=234       cterm=NONE
+    hi MatchParen   guifg=#ff0000   guibg=#99b2db   gui=NONE      ctermfg=196       ctermbg=153       cterm=NONE
   endif
 " }}}
 
 hi Error        guifg=#eeeeee   guibg=#ff0000   gui=NONE      ctermfg=255       ctermbg=196       cterm=NONE
-hi Todo         guifg=#080808   guibg=#ffd700   gui=NONE      ctermfg=232       ctermbg=220       cterm=NONE
+hi Todo         guifg=#080808   guibg=NONE   gui=NONE      ctermfg=232       ctermbg=NONE       cterm=NONE
 hi Underlined   guifg=NONE      guibg=NONE      gui=underline ctermfg=NONE      ctermbg=NONE      cterm=underline
 
 " MIT LICENSE {{{
