@@ -115,7 +115,7 @@
 
     hi CursorLine   guifg=NONE      guibg=#1c1c1c   gui=NONE      ctermfg=NONE      ctermbg=234       cterm=NONE
     hi ColorColumn  guifg=#ff0000   guibg=#1c1c1c   gui=NONE      ctermfg=203       ctermbg=234       cterm=NONE
-    hi MatchParen   guifg=#ff0000   guibg=#99b2db   gui=NONE      ctermfg=196       ctermbg=153       cterm=NONE
+    hi MatchParen   guifg=#ff0000   guibg=NONE      gui=NONE      ctermfg=197       ctermbg=NONE      cterm=NONE
   endif
 " }}}
 
